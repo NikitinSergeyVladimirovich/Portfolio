@@ -1,6 +1,7 @@
 {
     "name": "about-me",
     "version": "0.1.0",
+    "homepage": "http://nikitinsergeyvladimirovich.github.io/Portfolio",
     "private": true,
     "dependencies": {
       "@emotion/react": "^11.11.1",

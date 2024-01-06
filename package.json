@@ -1,5 +1,6 @@
 {
     "name": "about-me",
+    "git-name": "Portfolio",
     "version": "0.1.0",
     "homepage": "http://nikitinsergeyvladimirovich.github.io/Portfolio",
     "private": true,

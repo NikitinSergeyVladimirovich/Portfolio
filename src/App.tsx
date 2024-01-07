@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter} from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Footer from './components/footer';
 import AboutMe from './components/about-me';
@@ -8,17 +9,19 @@ import WorkExperience from './components/work-experience';
 
 const App = () =>  {
   return (
-    <Stack
-      spacing={4}
-      sx={{
-      }}
-      height={'100%'}
-      >
-        <AboutMe/>
-        <Skills />
-        <WorkExperience />
-        <Footer/>
-    </Stack>
+    <BrowserRouter>
+      <Stack
+        spacing={4}
+        sx={{
+        }}
+        height={'100%'}
+        >
+          <AboutMe/>
+          <Skills />
+          <WorkExperience />
+          <Footer/>
+      </Stack>
+    </BrowserRouter>
   );
 }
 

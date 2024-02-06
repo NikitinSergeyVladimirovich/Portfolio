@@ -1,5 +1,5 @@
 {
-    "name": "about-me",
+    "name": "Portfolio",
     "git-name": "Portfolio",
     "version": "0.1.0",
     "homepage": "http://nikitinsergeyvladimirovich.github.io/Portfolio",
@@ -30,7 +30,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -b main -d build"
+        "deploy": "gh-pages -b build"
     },
     "eslintConfig": {
         "extends": [

@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Footer from './components/footer';
@@ -10,7 +9,6 @@ import WorkExperience from './components/work-experience';
 
 const App= () =>  {
   return (
-    <BrowserRouter>
       <Route>
         <Stack
           spacing={4}
@@ -24,7 +22,6 @@ const App= () =>  {
             <Footer/>
         </Stack>
       </Route>
-    </BrowserRouter>
   );
 }
 

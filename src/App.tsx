@@ -1,4 +1,3 @@
-import { Route } from 'react-router-dom';
 import { BrowserRouter} from 'react-router-dom';
 import Footer from './components/footer';
 import AboutMe from './components/about-me';

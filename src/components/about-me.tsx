@@ -1,5 +1,4 @@
 import { Typography } from '@mui/material';
-import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import React from "react";
 import Card from "./card";

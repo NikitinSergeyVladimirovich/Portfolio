@@ -3,8 +3,6 @@ import Grid from '@mui/material/Grid';
 import { ISkillCategory } from '../../types/skills';
 import { Typography } from '@mui/material';
 
-const users = ["user1", "user2", "user3"];
-
 interface ISkillBlockProps {
     categories: ISkillCategory[];
 }

@@ -2,7 +2,7 @@
     "name": "about_me",
     "git-name": "Portfolio",
     "version": "0.1.0",
-    "homepage": "http://nikitinsergeyvladimirovich.github.io/Portfolio/main",
+    "homepage": "http://nikitinsergeyvladimirovich.github.io/Portfolio",
     "private": true,
     "dependencies": {
         "@emotion/react": "^11.11.1",

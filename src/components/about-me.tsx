@@ -62,11 +62,13 @@ const AboutMe = () => {
                 >
                     <Grid item>
                         <img
-                           src={man}
-                           alt=""
-                           style={{
-                               margin: '10px',
-                           }}
+                            alt=""
+                            src={man}
+                            style={{
+                                margin: '10px',
+                                height: '100%',
+                                width: '100%',
+                            }}
                         />
                     </Grid>
                 </Grid>

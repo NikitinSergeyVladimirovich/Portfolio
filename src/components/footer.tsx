@@ -14,6 +14,7 @@ const Footer = () => {
                 item
                 xs={1}
                 container
+                mr={2}
                 justifyContent="center"
                 alignItems="center"
             >
@@ -29,6 +30,7 @@ const Footer = () => {
                 item
                 xs={1}
                 container
+                mr={2}
                 justifyContent="center"
                 alignItems="center"
             >
@@ -43,6 +45,7 @@ const Footer = () => {
             <Grid
                 item
                 xs={1}
+                mr={2}
                 container
                 justifyContent="center"
                 alignItems="center"

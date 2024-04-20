@@ -22,7 +22,7 @@ const WorkExperienceBlock = ({
                     container
                     direction="row"
                     justifyContent="center"
-                    alignItems="center"
+                    alignItems="start"
                     xs={12}
                     p={4}
                 >
@@ -60,17 +60,49 @@ const WorkExperienceBlock = ({
                             alignItems="center"
                             item
                         >
-                            <Grid item xs={12}>
-                                <Typography variant="h5">{ job.time }</Typography>
-                            </Grid>
-                            <Grid item xs={12} py={2}>
+                            <Grid item xs={12} pb={4}>
                                 <Typography variant="h5">{ job.name }</Typography>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h5" pb={2}>{ job.description }</Typography>
+                                <Typography variant="h5" pb={4}>{ job.time }</Typography>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h5">Используемые технологии: { job.technology.join(", ") }</Typography>
+                                <Typography variant="h5" pb={4}>{ job.description }</Typography>
+                            </Grid>
+                            <Grid item xs={12} pb={4}>
+                                {job.blockTechnologyShort?.map((item) =>
+                                    <>
+                                        <Typography variant="h5" pb={2}>{ Object.keys(item)[0] + ': ' + Object.values(item).map(i => i) } </Typography>
+                                    </>
+                                )}
+                            </Grid>
+                            <Grid item xs={12} pb={4}>
+                                {job.blockTechnologyDescription?.map((item) =>
+                                    <>
+                                        {item.map(i => 
+                                            <Typography variant="h5" pb={2}>{ i }</Typography>
+                                        )}
+                                    </>
+                                )}
+                            </Grid>
+                            <Grid item xs={12} pb={4}>
+                                {job.blockTechnology?.map((item, key) =>
+                                    <>
+                                        <Typography variant="h5" pb={2}>{`${key += 1}. `}{ Object.keys(item)[0] }</Typography>
+                                        { Object.values(item)[0]?.map((i, keys) =>
+                                            <>
+                                                <Typography variant="h5" pb={2} pl={4}>{`${key}.${keys += 1} `}{ i }</Typography>
+                                            </>
+                                        )}
+                                    </>
+                                )}
+                            </Grid>
+                            <Grid item xs={12} pb={4}>
+                                {job.projectsUnderDevelopment?.map((item) =>
+                                    <>
+                                        <Typography variant="h5" pb={2}>{ '- ' + item }</Typography>
+                                    </>
+                                )}
                             </Grid>
                         </Grid>
                 </Grid>

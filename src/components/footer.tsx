@@ -11,11 +11,11 @@ const Footer = () => {
     return ( 
         <Card title={null}>
             <Grid
-                item
-                xs={1}
-                container
-                justifyContent="center"
                 alignItems="center"
+                container
+                item
+                justifyContent="center"
+                xs={1}
             >
                 <Link
                     href="mailto:serega06503043@gmail.com"
@@ -42,11 +42,11 @@ const Footer = () => {
                 </Link>
             </Grid>
             <Grid
-                item
-                xs={1}
-                container
-                justifyContent="center"
                 alignItems="center"
+                container
+                item
+                justifyContent="center"
+                xs={1}
             >
                 <Link
                     href="https://t.me/seregaNiki"

@@ -14,7 +14,6 @@ const Footer = () => {
                 item
                 xs={1}
                 container
-                mr={2}
                 justifyContent="center"
                 alignItems="center"
             >
@@ -27,12 +26,12 @@ const Footer = () => {
                 </Link>
             </Grid>
             <Grid
-                item
-                xs={1}
-                container
-                mr={2}
-                justifyContent="center"
                 alignItems="center"
+                container
+                item
+                justifyContent="center"
+                mx={2}
+                xs={1}
             >
                 <Link
                     href="https://github.com/NikitinSergeyVladimirovich"
@@ -45,7 +44,6 @@ const Footer = () => {
             <Grid
                 item
                 xs={1}
-                mr={2}
                 container
                 justifyContent="center"
                 alignItems="center"
